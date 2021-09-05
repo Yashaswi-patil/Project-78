@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet"> 
+    </head>
+    <title> Family Book</title>
+    <body>
+      <h1> Family Book</h1>
+      <hr> <hr>
+      <img id="family_img" src="Family-Tree-image.jpg">
+      <h2 id="one">1. Our Family Book</h2>
+       <button type="button" onclick="family()">Next</button>
+  <hr>
+  <script>     
+  var names=[
+    "2. My Father (Tulshiram Patil)",
+    "3. My Mother (Priya Patil)",
+    "4. Myself (Yashaswi Patil)",
+    "5. My Brother (Yajnesh Patil)"
+    
+    ];
+  var images=[
+    "Father.jpg",
+    "Mother.jpg",
+    "Me (2).jpg",
+    "Brother.jpg"
+  ];
+  var i=0;
+  function family(){
+    document.getElementById("one").innerHTML=names[i];
+    document.getElementById("family_img").src=images[i];
+    i++;
+    if(i==4){
+      i=0;
+    }}
+    </script>
+ <script async src="https://drv.tw/inc/wd.js"></script>
+  </body>
+  </html>
